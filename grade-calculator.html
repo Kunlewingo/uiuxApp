@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculator</title>
+</head>
+<body>
+
+    <script>
+        // Prompt the user to enter a mark
+        let mark = parseInt(prompt("Enter the student's mark (0 - 100):"));
+
+        // Check if the mark is valid
+        if (mark >= 70 && mark <= 100) {
+            document.write("<h2>Grade: A</h2>");
+        } else if (mark >= 50 && mark <= 60) {
+            document.write("<h2>Grade: C</h2>");
+        } else if (mark >= 0 && mark <= 40) {
+            document.write("<h2>Grade: F</h2>");
+        } else if ((mark >= 41 && mark <= 49) || (mark >= 61 && mark <= 69)) {
+            document.write("<h2>No grade specified for this mark.</h2>");
+        } else {
+            document.write("<h2>Invalid mark! Please enter a value between 0 and 100.</h2>");
+        }
+    </script>
+
+</body>
+</html>
